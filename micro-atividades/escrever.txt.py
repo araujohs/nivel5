@@ -1,0 +1,20 @@
+#2a (inclui o encoding depois que vi que tinha caracteres especiais [a com til na palavra tão])
+arq = open('texto.txt','w',encoding='utf8')
+#2b
+texto = list()
+#2c
+texto.append('No Meio do Caminho (Carlos Drummond de Andrade)')
+texto.append('No meio do caminho tinha uma pedra')
+texto.append('tinha uma pedra no meio do caminho')
+texto.append('tinha uma pedra')
+texto.append('no meio do caminho tinha uma pedra.')
+texto.append('...')
+texto.append('Nunca me esquecerei desse acontecimento')
+texto.append('na vida de minhas retinas tão fatigadas.')
+texto.append('Nunca me esquecerei que no meio do caminho')
+texto.append('tinha uma pedra')
+texto.append('tinha uma pedra no meio do caminho')
+texto.append('no meio do caminho tinha uma pedra.')
+#2d
+arq.write('\n'.join(texto))
+arq.close()
